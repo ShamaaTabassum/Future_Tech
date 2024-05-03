@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+        --bg-primary:'#141414';
+}
+
+/* Tailwind Styles */
+
+@layer components{
+
+  .yellow_btn{
+    @apply  xl:px-4 xl:py-3 md:px-3 md:py-2 px-2 py-2 gap-[10px] border-none xl:rounded-[10px] rounded-md bg-primary-yellow font-inter font-medium xl:text-base md:text-sm text-xsm text-primary-grey
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  
+  .flex-start {
+    @apply flex justify-start items-start;
+  }
+  
+  .flex-end {
+    @apply flex justify-end items-center;
+  }
+  
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+}
+
